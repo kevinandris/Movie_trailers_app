@@ -1,3 +1,4 @@
+/* server action performs here, cant be merged with HeroCard.tsx */
 import { fetchTrending } from "@actions/movieData";
 import HeroCard from "./HeroCard";
 

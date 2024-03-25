@@ -1,9 +1,11 @@
 "use client";
 import { Search } from "@mui/icons-material";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const router = useRouter();
   const [search, setSearch] = useState<string>("");
   const [dropDownMenu, setDropDownMenu] = useState<boolean>(false);
 
@@ -46,7 +48,13 @@ const Navbar = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Search className="icon" />
+
+          <button disabled={search === ""}>
+            <Search
+              className="icon"
+              onClick={() => router.push(`/search/${search}`)}
+            />
+          </button>
         </div>
 
         <img
