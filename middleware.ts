@@ -6,6 +6,6 @@ export default withAuth({
   },
 });
 
-export default config = {
-  matcher: ["/", "my-list"],
+export const config = {
+  matcher: ["/", "/my-list", "/search/:path*"],
 };
