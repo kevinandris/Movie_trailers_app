@@ -15,6 +15,7 @@ const Navbar = () => {
       setIsScrolled(false);
     }
   };
+
   /* To trigger the event */
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
