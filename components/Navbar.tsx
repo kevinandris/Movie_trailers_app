@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const router = useRouter();
   const [search, setSearch] = useState<string>("");
-  const [dropDownMenu, setDropDownMenu] = useState<boolean>(false);
+  const [dropdownMenu, setDropdownMenu] = useState<boolean>(false);
 
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const handleScroll = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${isScrolled && "bg-black-1"}`}>
       <Link href="/">
-        <img src="/assets/keipy_logo.png" alt="logo" className="logo" />
+        <img src="/assets/keipyhub.png" alt="logo" className="logo" />
       </Link>
 
       <div className="nav-links">
@@ -66,10 +66,10 @@ const Navbar = () => {
           src="/assets/bg6.jpg"
           className="profile"
           alt="profile"
-          onClick={() => setDropDownMenu(!dropDownMenu)}
+          onClick={() => setDropdownMenu(!dropdownMenu)}
         />
 
-        {dropDownMenu && (
+        {dropdownMenu && (
           <div className="dropdown-menu">
             <Link href="/">Home</Link>
             <Link href="/my-list">My List</Link>

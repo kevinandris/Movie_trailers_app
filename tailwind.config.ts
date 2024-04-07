@@ -75,8 +75,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "pink-1": "#EC297B",
-        "pink-2": "#ED83B5",
+        "red-1": "#FF0000",
+        "red-2": "#8B0000",
         "black-1": "#131116",
       },
     },

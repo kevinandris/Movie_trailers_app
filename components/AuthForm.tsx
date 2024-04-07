@@ -66,7 +66,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
     <div className="auth">
       <div className="overlay">
         <div className="content">
-          <img src="/assets/keipy_logo.png" alt="logo" className="logo" />
+          <img src="/assets/keipyhub.png" alt="logo" className="logo" />
 
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
             {type === "register" && (
