@@ -14,7 +14,7 @@
    3) Main Page - contains different genre of movies
    ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/f8d983da-cf15-4e37-a587-522bfaa346ee)
 
-   4) My List Page - as a page if a user wants to watch or pin the movie later
+   4) My List Page - as a page if a user wants to watch or pin the movie to watch in the future.
    ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/025d08e4-0554-407f-ae1d-fc163c161c06)
 
    5) Database - registered users stored.
