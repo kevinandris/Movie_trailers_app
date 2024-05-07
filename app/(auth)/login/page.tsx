@@ -3,7 +3,7 @@ import AuthForm from "@components/AuthForm";
 const Login = () => {
   return (
     <div>
-      <AuthForm type="login" />
+      <AuthForm data-testid="auth-form" type="login" />
     </div>
   );
 };

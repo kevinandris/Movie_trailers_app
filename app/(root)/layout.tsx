@@ -6,7 +6,7 @@ import AuthProvider from "@context/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Auth Keipy hub",
+  title: "Keipy hub",
   description: "kevin pudihang project",
 };
 
