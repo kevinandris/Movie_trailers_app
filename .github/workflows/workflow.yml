@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   lint:
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -15,7 +16,6 @@ jobs:
         run: npm run lint
   dependency:
     # needs: lint
-    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -37,7 +37,8 @@ jobs:
         continue-on-error: true
         run: npm run build
   test:
-    needs: lint
+    if: failure()
+    # needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -47,7 +48,6 @@ jobs:
       - name: Test code
         run: npm run test
   deploy:
-    if: failure()
     needs: dependency
     runs-on: ubuntu-latest
     steps:
