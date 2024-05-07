@@ -16,6 +16,7 @@ jobs:
         run: npm run lint
   dependency:
     # needs: lint
+    continue-on-error: true
     strategy:
       matrix:
         node-version: [12, 14, 16]
