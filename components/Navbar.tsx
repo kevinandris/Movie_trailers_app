@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${isScrolled && "bg-black-1"}`}>
       <Link href="/">
-        <img src="/assets/keipyhub.png" alt="logo" className="logo" />
+        <img src="/assets/keipix.png" alt="logo" className="logo" />
       </Link>
 
       <div className="nav-links">

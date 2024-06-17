@@ -18,6 +18,7 @@ interface FormData {
 
 const AuthForm = ({ type }: { type: "register" | "login" }) => {
   const router = useRouter();
+
   const {
     register,
     handleSubmit,
@@ -66,8 +67,10 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
     <div className="auth">
       <div className="overlay">
         <div className="content">
-          <h1></h1>
-          <img src="/assets/keipyhub.png" alt="logo" className="logo" />
+          <p className=" text-slate-100">
+            Browse the latest movie trailers with us
+          </p>
+          <img src="/assets/keipix.png" alt="logo" className="logo" />
 
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
             {type === "register" && (
