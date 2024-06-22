@@ -78,7 +78,7 @@
 }
 
 .dropdown-menu {
-  @apply absolute top-40 p-3 flex flex-col gap-3 right-5 z-20 w-32 bg-white rounded-xl;
+  @apply absolute top-20 p-3 flex flex-col gap-3 right-5 z-20 w-32 bg-white rounded-xl;
 }
 
 .dropdown-menu > a {
