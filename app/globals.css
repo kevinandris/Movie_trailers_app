@@ -12,7 +12,7 @@
 
 /* Login & Register Pages */
 .auth {
-  @apply h-screen w-full bg-cover bg-center;
+  @apply h-screen w-full bg-cover bg-center font-mono;
   background-image: url("/assets/bg1.jpg");
 }
 
