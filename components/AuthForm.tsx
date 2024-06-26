@@ -7,8 +7,10 @@ import {
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 interface FormData {
   username?: string; // Make it optional because we don't need it for login page
@@ -18,6 +20,7 @@ interface FormData {
 
 const AuthForm = ({ type }: { type: "register" | "login" }) => {
   const router = useRouter();
+  const [isLoading, SetIsLoading] = useState(false);
 
   const {
     register,
@@ -34,6 +37,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
     let res;
 
     if (type === "register") {
+      SetIsLoading(true);
       res = await fetch("/api/auth/register", {
         method: "POST",
         headers: {
@@ -56,6 +60,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
       });
 
       if (res && res.ok) {
+        SetIsLoading(true);
         router.push("/");
       } else {
         toast.error("Invalid credentials");
@@ -140,7 +145,11 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
             )}
 
             <button className="button" type="submit">
-              {type === "register" ? "Join now" : "Login Now"}
+              {isLoading ? (
+                <Loader2 className="h-6 w-6 animate-spin" />
+              ) : (
+                <>{type === "register" ? "Join now" : "Login Now"}</>
+              )}
             </button>
           </form>
 
