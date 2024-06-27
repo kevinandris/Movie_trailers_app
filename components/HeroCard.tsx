@@ -37,11 +37,11 @@ const HeroCard = ({ trendingMovie }: { trendingMovie: Movie }) => {
             Play Now
           </button>
 
-          <button className="hero-btn" onClick={openModal}>
+          {/* <button className="hero-btn" onClick={openModal}>
             {" "}
             <InfoOutlined />
             More Info
-          </button>
+          </button> */}
         </div>
       </div>
 
