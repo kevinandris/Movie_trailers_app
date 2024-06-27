@@ -6,19 +6,19 @@
       
 #  Images:
    1) Login Page
-   ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/70079fca-d260-45b9-ba64-992f424c1e19)
+      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/a96f4bf8-defb-4d5a-9184-65e559623343)
 
    2) Register Page
-   ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/5868bb64-a27e-4a2d-ac5e-65d7fe39adca)
+      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/bdeaa408-88ff-4104-ae18-04e2a402f84f)
 
    3) Main Page - contains different genre of movies
-   ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/f8d983da-cf15-4e37-a587-522bfaa346ee)
+      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/7b8b0e0a-7fd0-46d6-954a-c29153e80800)
 
    4) My List Page - as a page if a user wants to watch or pin the movie to watch in the future.
-   ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/025d08e4-0554-407f-ae1d-fc163c161c06)
+      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/0aa02313-7fcc-4cd1-aa35-9b3cfa6214a2)
 
    5) Database - registered users stored.
-   ![image](https://github.com/kevinandris/netflix_clone/assets/102328858/19f92c2a-3e3e-45c4-afcc-d01a53e5c7fa)
+      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/79e324ff-3047-40ee-8670-f7f27f779708)
 
 #  To run the project:
    1) npm run dev
