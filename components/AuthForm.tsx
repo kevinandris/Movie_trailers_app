@@ -34,6 +34,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
   });
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    SetIsLoading(true);
     let res;
 
     if (type === "register") {
@@ -63,9 +64,11 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
         SetIsLoading(true);
         router.push("/");
       } else {
-        toast.error("Invalid credentials");
+        toast.error("Your email or password is incorrect");
       }
     }
+
+    SetIsLoading(false);
   };
 
   return (
@@ -85,8 +88,8 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
                     {...register("username", {
                       required: "Username is required",
                       validate: (value: string | undefined) => {
-                        if (!value || value.length < 2) {
-                          return "Username must be at least 2 characters long";
+                        if (!value || value.length < 3) {
+                          return "Username must be at least 3 characters long";
                         }
                         return true;
                       },
