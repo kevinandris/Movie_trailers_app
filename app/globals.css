@@ -141,7 +141,7 @@
 }
 
 .movie-list {
-  @apply flex gap-2 overflow-x-scroll scrollbar-hide;
+  @apply flex gap-2 overflow-x-hidden scrollbar-hide;
 }
 
 /* Movie */
@@ -163,7 +163,7 @@
 }
 
 .modal-close {
-  @apply absolute right-5 top-5 z-40;
+  @apply absolute right-5 top-20 z-40;
 }
 
 .modal-video {
