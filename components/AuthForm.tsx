@@ -72,7 +72,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
     <div className="auth">
       <div className="overlay">
         <div className="content">
-          <p className=" text-slate-100">
+          <p className=" text-slate-100 sm:flex justify-center items-center text-center font-bold">
             Browse the latest movie trailers with us
           </p>
           <img src="/assets/keipix.png" alt="logo" className="logo" />
