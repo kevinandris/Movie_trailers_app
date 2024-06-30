@@ -75,9 +75,9 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
     <div className="auth">
       <div className="overlay">
         <div className="content">
-          <p className=" text-slate-100 sm:flex justify-center items-center text-center font-bold">
+          <span className=" text-slate-100 sm:flex justify-center items-center text-center font-bold">
             Browse the latest movie trailers with us
-          </p>
+          </span>
           <img src="/assets/keipix.png" alt="logo" className="logo" />
 
           <form className="form" onSubmit={handleSubmit(onSubmit)}>
@@ -98,7 +98,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
                     placeholder="Username"
                     className="input-field"
                   />
-                  <PersonOutline sx={{ color: "white" }} />
+                  <PersonOutline sx={{ color: "white" }} className="icon" />
                 </div>
                 {errors.username && (
                   <p className="error">{errors.username.message}</p>
@@ -115,7 +115,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
                 placeholder="Email"
                 className="input-field"
               />
-              <EmailOutlined sx={{ color: "white" }} />
+              <EmailOutlined sx={{ color: "white" }} className="icon" />
             </div>
 
             {errors.email && <p className="error">{errors.email.message}</p>}
@@ -140,7 +140,7 @@ const AuthForm = ({ type }: { type: "register" | "login" }) => {
                 placeholder="Password"
                 className="input-field"
               />
-              <LockOutlined sx={{ color: "white" }} />
+              <LockOutlined sx={{ color: "white" }} className="icon" />
             </div>
 
             {errors.password && (
