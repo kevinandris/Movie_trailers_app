@@ -29,7 +29,7 @@
 }
 
 .form {
-  @apply flex flex-col items-center gap-5;
+  @apply flex flex-col items-center gap-5 w-full;
 }
 
 .input {
@@ -41,7 +41,7 @@
 }
 
 .input-field {
-  @apply absolute indent-8 w-full sm:min-w-[300px] bg-transparent text-white outline-none px-5 py-4 rounded-2xl border-white border-opacity-15 shadow-2xl focus:border-red-400 border-2 border-solid;
+  @apply absolute indent-8 w-full  bg-transparent text-white outline-none px-5 py-4 rounded-2xl border-white border-opacity-15 shadow-2xl focus:border-red-400 border-2 border-solid;
 }
 
 .error {
@@ -49,7 +49,7 @@
 }
 
 .button {
-  @apply w-80 px-5 py-3 mt-5 mb-7  flex justify-center rounded-xl cursor-pointer bg-red-2 hover:bg-red-1 text-white text-body-bold;
+  @apply w-60 px-5 py-3 mt-5 mb-7  flex justify-center rounded-xl cursor-pointer bg-red-2 hover:bg-red-1 text-white text-body-bold;
 }
 
 .link {
