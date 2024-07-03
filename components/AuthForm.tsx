@@ -4,13 +4,13 @@ import {
   LockOutlined,
   PersonOutline,
 } from "@mui/icons-material";
-import { signIn } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
 import toast from "react-hot-toast";
 import { Loader2 } from "lucide-react";
+import { signIn } from "next-auth/react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 interface FormData {
   username?: string; // Make it optional because we don't need it for login page

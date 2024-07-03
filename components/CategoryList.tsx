@@ -1,5 +1,5 @@
-import { Movie } from "@lib/types";
 import MovieCard from "./MovieCard";
+import { Movie } from "@lib/types";
 
 interface Props {
   title: string;

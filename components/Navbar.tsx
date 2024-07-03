@@ -1,9 +1,9 @@
 "use client";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import { Search } from "@mui/icons-material";
 import { signOut } from "next-auth/react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const router = useRouter();

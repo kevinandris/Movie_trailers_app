@@ -1,6 +1,6 @@
 /* server action performs here, cant be merged with HeroCard.tsx */
-import { fetchTrending } from "@actions/movieData";
 import HeroCard from "./HeroCard";
+import { fetchTrending } from "@actions/movieData";
 
 const Hero = async () => {
   const trending = await fetchTrending();

@@ -1,9 +1,9 @@
 "use client";
-import { baseImgUrl } from "@lib/constants";
-import { Movie } from "@lib/types";
-import { InfoOutlined, PlayCircleOutlineOutlined } from "@mui/icons-material";
-import { useState } from "react";
 import Modal from "./Modal";
+import { PlayCircleOutlineOutlined } from "@mui/icons-material";
+import { Movie } from "@lib/types";
+import { baseImgUrl } from "@lib/constants";
+import { useState } from "react";
 
 const HeroCard = ({ trendingMovie }: { trendingMovie: Movie }) => {
   const [showModal, setShowModal] = useState(false);

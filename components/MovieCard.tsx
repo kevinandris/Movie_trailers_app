@@ -1,8 +1,8 @@
 "use client";
-import { baseImgUrl } from "@lib/constants";
-import { Movie } from "@lib/types";
-import { useState } from "react";
 import Modal from "./Modal";
+import { Movie } from "@lib/types";
+import { baseImgUrl } from "@lib/constants";
+import { useState } from "react";
 
 const MovieCard = ({ movie }: { movie: Movie }) => {
   const [showModal, setShowModal] = useState(false);

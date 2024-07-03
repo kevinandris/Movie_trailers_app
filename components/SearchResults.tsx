@@ -1,6 +1,6 @@
-import { searchMovies } from "@actions/movieData";
-import { Movie } from "@lib/types";
 import MovieCard from "./MovieCard";
+import { Movie } from "@lib/types";
+import { searchMovies } from "@actions/movieData";
 
 const SearchResults = async ({ query }: { query: string }) => {
   let searchedMovies: Movie[] = [];

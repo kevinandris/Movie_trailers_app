@@ -1,10 +1,10 @@
 "use client";
-import { Genre, Movie, Video } from "@lib/types";
-import { AddCircle, CancelRounded, RemoveCircle } from "@mui/icons-material";
-import { useSession } from "next-auth/react";
-import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
+import React, { useEffect, useState } from "react";
+import { AddCircle, CancelRounded, RemoveCircle } from "@mui/icons-material";
+import { Genre, Movie, Video } from "@lib/types";
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 /* cannot pass the server function here because we have closeModal function of useState */
 

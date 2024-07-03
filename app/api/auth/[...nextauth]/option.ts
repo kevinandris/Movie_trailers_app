@@ -1,8 +1,8 @@
-import { connectToDB } from "@lib/mongoDB";
-import User from "@models/User";
-import { compare } from "bcryptjs";
-import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import User from "@models/User";
+import { NextAuthOptions } from "next-auth";
+import { compare } from "bcryptjs";
+import { connectToDB } from "@lib/mongoDB";
 
 export const options: NextAuthOptions = {
   providers: [

@@ -1,6 +1,6 @@
-import { connectToDB } from "@lib/mongoDB";
 import User from "@models/User";
 import { NextRequest } from "next/server";
+import { connectToDB } from "@lib/mongoDB";
 
 export const GET = async (
   req: NextRequest,

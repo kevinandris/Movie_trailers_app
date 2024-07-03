@@ -1,6 +1,6 @@
-import { connectToDB } from "@lib/mongoDB";
 import User from "@models/User";
 import { NextRequest, NextResponse } from "next/server";
+import { connectToDB } from "@lib/mongoDB";
 import { hash } from "bcryptjs";
 
 export const POST = async (req: NextRequest) => {
