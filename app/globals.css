@@ -41,7 +41,7 @@
 }
 
 .searchIcon {
-  @apply absolute top-9 text-white cursor-pointer hover:text-red-600;
+  @apply absolute max-sm:top-5 top-9 text-white cursor-pointer hover:text-red-600;
 }
 
 .input-field {
@@ -149,7 +149,7 @@
 }
 
 .movie-list {
-  @apply flex gap-2 overflow-x-hidden scrollbar-hide;
+  @apply flex gap-2 overflow-x-visible scrollbar-hide;
 }
 
 /* Movie */
