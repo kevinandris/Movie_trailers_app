@@ -56,7 +56,7 @@ const Navbar = () => {
 
           <button disabled={search === ""}>
             <Search
-              className="icon"
+              className="searchIcon"
               onClick={() => router.push(`/search/${search}`)}
             />
           </button>
