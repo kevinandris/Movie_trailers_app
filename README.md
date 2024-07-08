@@ -6,10 +6,10 @@
       
 #  Images:
    1) Login Page
-      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/a96f4bf8-defb-4d5a-9184-65e559623343)
+      ![login](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/74d50944-eca6-4b4f-bc6b-5c3291dbadb5)
 
    2) Register Page
-      ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/bdeaa408-88ff-4104-ae18-04e2a402f84f)
+      ![register](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/3d1979f5-f813-45ff-b6fb-36c9e7a70425)
 
    3) Main Page - contains different genre of movies
       ![image](https://github.com/kevinandris/Movie_trailers_app/assets/102328858/7b8b0e0a-7fd0-46d6-954a-c29153e80800)
